@@ -7,12 +7,12 @@ import java.time.LocalTime;
 public class Main {
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Digital Clock");
+        JFrame frame = new JFrame("Waktu");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 200);
 
         JLabel timeLabel = new JLabel("", SwingConstants.CENTER);
-        timeLabel.setFont(new Font("Sans-Serif", Font.BOLD, 48));  // Set font and size
+        timeLabel.setFont(new Font("Sans-Serif", Font.BOLD, 48));
 
         frame.add(timeLabel);
 
