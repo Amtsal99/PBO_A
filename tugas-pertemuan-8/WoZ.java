@@ -17,14 +17,12 @@ public class WoZ {
     private void buatRuangan() {
         Ruang luar, teater, pub, lab, kantor;
 
-        // create the rooms
         luar = new Ruang("outside the main entrance of the university");
         teater = new Ruang("in a lecture theater");
         pub = new Ruang("in the campus pub");
         lab = new Ruang("in a computing lab");
         kantor = new Ruang("in the computing admin office");
 
-        // initialize room exits
         luar.setKeluar("east", teater);
         luar.setKeluar("south", lab);
         luar.setKeluar("west", pub);
@@ -38,7 +36,7 @@ public class WoZ {
 
         kantor.setKeluar("west", lab);
 
-        ruangSekarang = luar;  // start game outside
+        ruangSekarang = luar;
     }
 
     public void bermain() {
